@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Java CPU Ray Tracer
 
 A CPU-based ray tracer implemented from scratch in Java without using OpenGL/WebGL or external rendering engines.
@@ -81,3 +82,7 @@ Technical Notes
 Purpose:
 This project demonstrates a full CPU-based ray tracer with proper shading, lighting, shadowing, and XML scene parsing, highlighting object-oriented design and rendering fundamentals.
 
+=======
+# java-ray-tracer
+CPU-based Java ray tracer with Phong shading, XML scene parsing, and PPM output.
+>>>>>>> 9e8a159d4208066517e2db8b3f8148bbaa3c70a0
