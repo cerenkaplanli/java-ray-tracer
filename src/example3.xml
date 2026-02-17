@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE scene SYSTEM "scene.dtd">
+<scene output_file="3example.ppm">
+    <background_color r="0.0" g="0.0" b="0.0"/>
+
+    <camera>
+        <position x="0" y="2" z="6"/>
+        <lookat x="0" y="0" z="0"/>
+        <up x="0" y="1" z="0"/>
+        <horizontal_fov angle="60"/>
+        <resolution horizontal="800" vertical="600"/>
+        <max_bounces n="3"/>
+    </camera>
+
+    <lights>
+        <ambient_light>
+            <color r="0.05" g="0.05" b="0.05"/>
+        </ambient_light>
+        <point_light>
+            <color r="1.0" g="1.0" b="1.0"/>
+            <position x="5" y="5" z="5"/>
+        </point_light>
+    </lights>
+
+    <surfaces>
+        <sphere radius="1.0">
+            <position x="1.2" y="1.8" z="0"/>
+            <material_solid>
+                <color r="0.7" g="0.1" b="0.1"/>
+                <phong ka="0.1" kd="1.0" ks="1.0" exponent="50"/>
+                <reflectance r="0.0"/>
+                <transmittance t="0.0"/>
+                <refraction iof="1.0"/>
+            </material_solid>
+        </sphere>
+
+        <sphere radius="1.0">
+            <position x="-0.6" y="0" z="0"/>
+            <material_solid>
+                <color r="0.1" g="0.7" b="0.1"/>
+                <phong ka="0.1" kd="1.0" ks="1.0" exponent="50"/>
+                <reflectance r="0.0"/>
+                <transmittance t="0.0"/>
+                <refraction iof="1.0"/>
+            </material_solid>
+        </sphere>
+
+        <sphere radius="1.0">
+            <position x="1.5" y="0" z="-0.5"/>
+            <material_solid>
+                <color r="0.1" g="0.1" b="0.7"/>
+                <phong ka="0.1" kd="1.0" ks="1.0" exponent="50"/>
+                <reflectance r="0.0"/>
+                <transmittance t="0.0"/>
+                <refraction iof="1.0"/>
+            </material_solid>
+        </sphere>
+    </surfaces>
+</scene>
